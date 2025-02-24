@@ -1,0 +1,99 @@
+/*? HEADER STYLES */
+header {
+    display: flex;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 1.5rem;
+  }
+  
+  header > h1 {
+    background-color: var(--logo);
+    width: 60px;
+    height: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--color-background);
+  }
+  
+  header input {
+    padding: 1rem 1.4rem;
+    border-radius: 2rem;
+    flex-grow: 1;
+    background-color: var(--secondary);
+    border: none;
+    font-size: 1rem;
+  }
+  
+  header button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header img {
+    height: 40px;
+    width: 40px;
+  }
+  
+  header button:hover {
+    background-color: var(--secondary);
+  }
+  
+  header .icon {
+    filter: contrast(30%);
+  }
+  
+  header .profileimg {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
+  
+  #searchbtn, #darkmodebtn, .profileimg {
+    cursor: pointer;
+  }
+  
+  #menu {
+    display: none; /*? Ocultar por defecto inicialmente hasta llegar a 515px */
+    cursor: pointer;
+    position: relative;
+  }
+  
+  #menu-items {
+    display: none; /*? Ocultar los elementos inicialmente hasta llegar a 515px*/
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: var(--secondary);
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    list-style: none;
+    z-index: 1000;
+  }
+  
+  #menu-items li {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  #menu-items li:hover {
+    background-color: var(--color-background);
+  }
+  
+  #menu-items li.active {
+    font-weight: bold;
+    color: var(--logo);
+  }
+  

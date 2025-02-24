@@ -1,0 +1,90 @@
+:root {
+  --color-background: whitesmoke;
+  --primary: #111111;
+  --secondary: #cacaca;
+  --logo: #e60022;
+  --transparent: rgba(245, 245, 245, 0.862);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--primary);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dark {
+  background-color: var(--primary);
+  color: var(--color-background);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active {
+  background-color: var(--primary);
+  color: var(--color-background);
+  padding: 1rem 1.4rem;
+  border-radius: 2rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*? MEDIA QUERIES */
+@media (max-width: 515px) {
+  #searchbtn, #darkmodebtn, .profileimg {
+    display: none;
+  }
+}
+
+@media (max-width: 515px) {
+  #menu {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  #searchinput {
+    width: 80%;
+  }
+}
+
+@media (max-width: 441px) {
+  h4 {
+    display: flex;
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .gallery {
+    grid-template-columns: repeat(1, fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
